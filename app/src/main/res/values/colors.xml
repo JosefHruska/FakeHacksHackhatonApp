@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Named colors from Zeplin: -->
+    <color name="accent">#f2774a</color>
+    <color name="blue_light">#64B5F6</color>
+    <color name="blue_dark">#2196F3</color>
+    <color name="gray_1">#e4e4e4</color>
+    <color name="gray_2">#d8d8d8</color>
+    <color name="gray_3">#bbbbbb</color>
+    <color name="gray_4">#888888</color>
+    <color name="gray_5">#444444</color>
+    <color name="gray_6">#333333</color>
+    <color name="gray_7">#222222</color>
+    <color name="gray_8">#757575</color>
+    <color name="white">#ffffff</color>
+    <color name="red_negative">#f7412d</color>
+    <color name="green_positive">#47b04b</color>
+    <color name="blue_paypal">#27366b</color>
+    <color name="premium">#eba500</color>
+    <color name="widget_background">#fafafa</color>
+    <!-- Additional colors: -->
+    <color name="primary">#202020</color>
+    <color name="primary_dark">#000000</color>
+    <color name="black">#000000</color>
+    <color name="wallet_button">#4496FF</color>
+    <color name="shortcut_background">#F5F5F5</color>
+    <!-- Opaque colors. Use this table to calculate: http://stackoverflow.com/a/25170174/560358 -->
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black_24opacity">#3D000000</color>
+    <color name="black_30opacity">#4D000000</color>
+    <color name="black_50opacity">#80000000</color>
+    <color name="black_62opacity">#9E000000</color>
+    <color name="black_70opacity">#B3000000</color>
+    <color name="black_90opacity">#E6000000</color>
+    <color name="white_40opacity">#66FFFFFF</color>
+    <color name="white_50opacity">#80FFFFFF</color>
+    <color name="white_60opacity">#99ffffff</color>
+</resources>

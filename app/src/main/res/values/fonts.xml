@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Fonts from Zeplin: -->
+
+    <style name="GeneralText">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/blue_light</item>
+    </style>
+
+
+    <style name="CalcAmount">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/max_amount_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CalcAmountSmall">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/max_small_amount_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="KeyboardCustomNumber">
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="OnboardingPrimaryWhite">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/onboarding_primary_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">-0.02</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="OnboardingPrimary">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/onboarding_primary_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">-0.02</item>
+        <item name="android:textColor">@color/gray_5</item>
+    </style>
+
+    <style name="InputFieldTextBig">
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CalcCurrency">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CalcCurrency.Big">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="CalcWeight">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ActionbarTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ListAmountAccentBig">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="ListPrimaryBig">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="CalcCurrencySmall">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DialogHeadline">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">-0.01</item>
+        <item name="android:textColor">@color/gray_6</item>
+    </style>
+
+    <style name="ListPrimary">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="ActionbarTitleSmall">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BtnFabExtended">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ListAmountAccent">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="ListAmountPositive">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/green_positive</item>
+    </style>
+
+    <style name="ListAmountNegative">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/red_negative</item>
+    </style>
+
+    <style name="InputFieldText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="ListPrimarySmall">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="InputFieldHintBig">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="BtnSecondary">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="DialogDescription">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/gray_4</item>
+    </style>
+
+    <style name="OnboardingSecondaryWhite">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/onboarding_secondary_text_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:horizontalSpacing">5sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textColor">@color/white_60opacity</item>
+    </style>
+
+    <style name="Overflow">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="OverflowHighlight">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="OnboardingSecondary">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/onboarding_secondary_text_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="ListPrimaryDisabled">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="Paypal">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.02</item>
+        <item name="android:textColor">@color/blue_paypal</item>
+    </style>
+
+    <style name="BtnSocial">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.02</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FabHint">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BtnTextGray">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_4</item>
+    </style>
+
+    <style name="BtnPrimaryGroup">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+    </style>
+
+    <style name="BtnTextWhite">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BtnPrimaryAccent">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="ListHelplinkRight">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ListHelplinkLeft">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ListPrimaryTiny">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="ListSecondaryOverview">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/gray_7</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TabbarInactive">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ListSecondaryBold">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="DropdownWhite">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TabbarIactive">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ListAmountSmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="ListHeaderDisabled">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="ListHeader">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_4</item>
+    </style>
+
+    <style name="ListSecondary">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="TipDescription">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/gray_4</item>
+    </style>
+
+    <style name="InputFieldHintSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_4</item>
+    </style>
+
+    <style name="InputFieldWhiteHintSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white_50opacity</item>
+    </style>
+
+    <style name="InputFieldError">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <!-- Additional fonts: -->
+
+    <style name="NoDebtsText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_50opacity</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DrawerName">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SummaryCardFooter">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SummaryCardFooter.LetterSpaced">
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+    </style>
+
+    <style name="WhiteLetterSpaced">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.04</item>
+    </style>
+
+    <style name="DrawerEmail">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_60opacity</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CardButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="KeyboardOperator">
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="Progress">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ProgressSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/gray_2</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Statistics">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:lineSpacingExtra">24sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="StatisticsAbout">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PlanTitle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="PlanText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_4</item>
+        <item name="android:lineSpacingExtra">19sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PremiumPlanText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/premium</item>
+        <item name="android:lineSpacingExtra">19sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BasicPlanText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:lineSpacingExtra">19sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PlanHint">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:lineSpacingExtra">19sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BtnPremiumButton">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.02</item>
+        <item name="android:textColor">@color/premium</item>
+    </style>
+
+    <style name="BtnPremiumImportant">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.02</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Discount">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.02</item>
+        <item name="android:textColor">@color/red_negative</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Equals">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="WidgetPrimary">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="WidgetSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_4</item>
+    </style>
+
+    <style name="WidgetMessage">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_4</item>
+    </style>
+
+    <style name="WidgetAmount">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/gray_7</item>
+        <item name="android:fontFamily">sans-serif-</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="WidgetCalcButton">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="WidgetButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

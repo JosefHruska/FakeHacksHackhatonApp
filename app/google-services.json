@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "688758136903",
+    "firebase_url": "https://fakeappka.firebaseio.com",
+    "project_id": "fakeappka",
+    "storage_bucket": "fakeappka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688758136903:android:556fb15bcd283bae",
+        "android_client_info": {
+          "package_name": "com.example.peanutbook.fakeappka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688758136903-21555tblmhdvdgpd6lbq88pekgg9u40p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs0R7KBO1qU0xdbWX469PIjz8USo-GC90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

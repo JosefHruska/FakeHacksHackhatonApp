@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="item_card_margin">1dp</dimen>
+    <!-- Margin of Card Views should be 8dp. However, Card Views on API < 21 draws shadow effect which took 2dp -->
+    <dimen name="card_margin_bottom">6dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="meIndicatorIdentifier">1dp</dimen>
+    <!-- circles_height + circles_bottom_padding = collapsing_toolbar_height -->
+    <dimen name="collapsing_toolbar_height">376dp</dimen>
+    <dimen name="circles_height">328dp</dimen>
+    <dimen name="circles_bottom_padding">48dp</dimen>
+    <dimen name="bottom_bar_height">56dp</dimen>
+    <dimen name="appbar_size_landscape_phone">113dp</dimen>
+    <dimen name="status_bar_height_default">24dp</dimen>
+    <dimen name="appbar_scroll_sensitivity">45dp</dimen>
+    <dimen name="fab_behavior_scroll_sensitivity">1dp</dimen>
+    <!-- Ilustrated description constraints -->
+    <item name="guideline_top" format="float" type="dimen">0.07</item>
+    <item name="guideline_text_landscape" format="float" type="dimen">0.20</item>
+    <item name="guideline_center" format="float" type="dimen">0.50</item>
+    <item name="guideline_text_portrait" format="float" type="dimen">0.60</item>
+    <item name="guideline_bottom" format="float" type="dimen">0.93</item>
+    <item name="guideline_left" format="float" type="dimen">0.05</item>
+    <item name="guideline_right" format="float" type="dimen">0.95</item>
+    <!-- Smaller fonts for really small phones -->
+    <dimen name="onboarding_primary_text_size">22sp</dimen>
+    <dimen name="onboarding_secondary_text_size">12sp</dimen>
+    <!-- Onboarding screen -->
+    <dimen name="onboarding_bottom_panel_margin">10dp</dimen>
+    <dimen name="onboarding_indicator_margin">4dp</dimen>
+    <!-- Calculator -->
+    <dimen name="max_amount_text_size">64sp</dimen>
+    <dimen name="max_small_amount_text_size">40sp</dimen>
+    <!-- Needed for smaller padding in tip popup -->
+    <dimen name="design_snackbar_padding_vertical_2lines" tools:override="true">8dp</dimen>
+    <dimen name="tip_top_margin">72dp</dimen>
+    <!-- Split selector and total amount -->
+    <dimen name="toolbar_title_left_margin">0dp</dimen>
+
+</resources>

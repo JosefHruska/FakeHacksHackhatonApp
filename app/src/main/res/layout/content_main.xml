@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.peanutbook.fakeappka.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vFirstCard"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/vWebsiteTitle"
+                    style="@style/TextView.CardTitle"
+                    android:layout_marginBottom="0dp"
+                    android:text="Website"
+                    android:textAppearance="@style/ListHeader"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/vWebsite"
+                    style="@style/TextView.GeneralText"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+
+                    android:textAppearance="@style/GeneralText"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vWebsiteTitle" />
+
+                <TextView
+                    android:id="@+id/vNameTitle"
+                    style="@style/TextView.CardTitle"
+                    android:layout_marginBottom="0dp"
+                    android:text="Mediahouse"
+                    android:textAppearance="@style/ListHeader"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vWebsite"/>
+
+                <TextView
+                    android:id="@+id/vName"
+                    style="@style/TextView.GeneralText"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/GeneralText"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vNameTitle" />
+
+                <TextView
+                    android:id="@+id/vOwnerTitle"
+                    style="@style/TextView.CardTitle"
+                    android:layout_marginBottom="0dp"
+                    android:text="Owner"
+                    android:textAppearance="@style/ListHeader"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vName" />
+
+                <TextView
+                    android:id="@+id/vOwner"
+                    style="@style/TextView.GeneralText"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/GeneralText"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vOwnerTitle" />
+
+                <TextView
+                    android:id="@+id/vDateTitle"
+                    style="@style/TextView.CardTitle"
+                    android:layout_marginBottom="0dp"
+                    android:text="Established"
+                    android:textAppearance="@style/ListHeader"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vOwner" />
+
+                <TextView
+                    android:id="@+id/vDate"
+                    style="@style/TextView.GeneralText"
+                    android:layout_gravity="center"
+                    android:paddingBottom="16dp"
+                    android:textAppearance="@style/GeneralText"
+                    android:textSize="18sp"
+                    android:alpha="0.8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vDateTitle" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vNetworkTable"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vFirstCard">
+
+            <LinearLayout
+                android:id="@+id/vTableContainer"
+                style="@style/Layout.Full">
+
+                <TextView
+                    android:id="@+id/vNetworkTitle"
+                    style="@style/TextView.CardTitle"
+                    android:text="Network"
+                    android:textAppearance="@style/ListHeader" />
+
+                <include
+                    android:id="@+id/vFirstRow"
+                    layout="@layout/include_table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vMainTopicCard"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vFirstCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.CardTitle"
+                    android:text="Topic" />
+
+                <TextView
+                    android:id="@+id/vTopic"
+                    style="@style/TextView.GeneralText"
+                    android:textColor="@color/blue_light"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vWordCloudCard"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vMainTopicCard">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vWordCloudTitle"
+                    style="@style/TextView.CardTitle"
+                    android:text="Tags"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <net.alhazmy13.wordcloud.WordCloudView
+                    android:id="@+id/vWordCloud"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vWordCloudTitle" />
+
+                <TextView
+                    android:id="@+id/vMainTopicTitle"
+                    style="@style/TextView.CardTitle"
+                    android:text="Topic"
+                    app:layout_constraintLeft_toRightOf="@id/vWordCloud"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/vMainTopic"
+                    style="@style/TextView.GeneralText"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/blue_light"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="@id/vMainTopicTitle"
+                    app:layout_constraintTop_toBottomOf="@id/vMainTopicTitle" />
+
+                <TextView
+                    android:id="@+id/vRatingTitle"
+                    style="@style/TextView.CardTitle"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Fakenews"
+                    app:layout_constraintLeft_toLeftOf="@id/vMainTopicTitle"
+                    app:layout_constraintTop_toBottomOf="@id/vMainTopic" />
+
+                <ImageView
+                    android:id="@+id/vRating"
+                    style="@style/TextView"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="@id/vMainTopicTitle"
+                    app:layout_constraintTop_toBottomOf="@id/vRatingTitle" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vFollowingTable"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vWordCloudCard">
+
+            <LinearLayout
+                android:id="@+id/vFollowingContainer"
+                style="@style/Layout.Full"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/vFollowingTitle"
+                    style="@style/TextView.CardTitle"
+                    android:text="Following"
+                    android:textAppearance="@style/ListHeader" />
+
+                <include
+                    android:id="@+id/vFirstRow"
+                    layout="@layout/include_table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vFollowerTable"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vFollowingTable">
+
+            <LinearLayout
+                android:id="@+id/vFollowerContainer"
+                style="@style/Layout.Full"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/vFollowerTitle"
+                    style="@style/TextView.CardTitle"
+                    android:text="Followers"
+                    android:textAppearance="@style/ListHeader" />
+
+                <include
+                    android:id="@+id/vFirstRow"
+                    layout="@layout/include_table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vProgressCard"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vFollowerTable">
+
+            <LinearLayout
+                android:id="@+id/vProgressContainer"
+                style="@style/Layout.Full"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    style="@style/TextView.CardTitle"
+                    android:text="Percentage of maximal value" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        style="@style/TextView"
+                        android:layout_marginLeft="8dp"
+                        app:srcCompat="@drawable/ic_share"/>
+
+                    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                        android:id="@+id/vProgress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_margin="12dp"
+                        android:orientation="horizontal"
+                        app:rcBackgroundColor="@color/gray_1"
+                        app:rcBackgroundPadding="4dp"
+                        app:rcProgressColor="@color/blue_light"
+                        app:rcSecondaryProgressColor="@color/gray_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        style="@style/TextView"
+                        android:layout_marginLeft="8dp"
+                        app:srcCompat="@drawable/ic_thumb_up_black_24dp" />
+
+                    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                        android:id="@+id/vProgress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_margin="12dp"
+                        android:orientation="horizontal"
+                        app:rcBackgroundColor="@color/gray_1"
+                        app:rcBackgroundPadding="4dp"
+                        app:rcProgressColor="@color/blue_light"
+                        app:rcSecondaryProgressColor="@color/gray_1" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vRelatedSitesCard"
+            style="@style/Layout.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vProgressCard">
+
+            <LinearLayout
+                android:id="@+id/vRelatedSitesContainer"
+                style="@style/Layout.Full">
+
+                <TextView
+                    android:id="@+id/vRelatedSitesTitle"
+                    style="@style/TextView.CardTitle"
+                    android:text="Related sites"
+                    android:textAppearance="@style/ListHeader" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/blue_dark</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorHint">@color/gray_4</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/gray_1</item>
+        <item name="searchViewStyle">@style/Toolbar.SearchView</item>
+        <item name="autoCompleteTextViewStyle">@style/Toolbar.AutoCompleteTextView</item>
+        <item name="droppyMenuItemTitleStyle">@style/DroppyMenuItemTitle</item>
+        <item name="droppyMenuItemStyle">@style/DroppyMenuItem</item>
+    </style>
+
+    <style name="AppTheme.WhiteBackground">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="AppTheme.GrayBackground">
+        <item name="android:windowBackground">@color/gray_2</item>
+    </style>
+
+    <style name="AppTheme.BlackBackground">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="AppTheme.WhiteBackground.TranslucentStatus">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <style name="AppTheme.TranslucentStatus">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DroppyMenuItemTitle">
+        <item name="android:textAppearance">@style/Overflow</item>
+    </style>
+
+    <style name="DroppyMenuItem" parent="Droppy.DroppyMenuItem">
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="LoginTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorButtonNormal">@color/accent</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="OpenSourceLibrariesActivity" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowBackground">@color/gray_1</item>
+    </style>
+
+</resources>

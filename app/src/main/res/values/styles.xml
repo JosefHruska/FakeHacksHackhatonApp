@@ -1,0 +1,510 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Common layouts: -->
+    <style name="Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout.Full">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Layout.Horizontal.Full">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Layout.Toolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="drawerArrowStyle">@style/Toolbar.Arrow</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="Layout.Toolbar.Grey">
+        <!-- Grey icons -->
+        <item name="colorControlNormal">@color/gray_4</item>
+    </style>
+
+    <style name="Layout.ToolbarTextInput">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textColorHint">@color/white_50opacity</item>
+
+        <item name="hintAnimationEnabled">false</item>
+        <item name="hintTextAppearance">@style/InputFieldWhiteHintSmall</item>
+    </style>
+
+    <style name="EditText.WhiteUnderline.ToolbarInputEditText">
+
+        <item name="android:layout_marginLeft">56dp</item>
+        <item name="android:layout_marginRight">56dp</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textAppearance">@style/InputFieldTextBig</item>
+    </style>
+
+    <style name="Layout.Cards">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingBottom">@dimen/card_margin</item>
+    </style>
+
+    <style name="Layout.Card">
+        <item name="android:layout_marginLeft">@dimen/card_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/card_margin
+        </item>
+        <item name="android:layout_marginRight">@dimen/card_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">@dimen/card_margin
+        </item>
+        <item name="android:layout_marginBottom">@dimen/card_margin_bottom</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+
+    <style name="Layout.CollapsingCard">
+        <item name="android:clickable">false</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="Layout.Scroll">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout.Coordinator">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout.FragmentContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.Circle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.FillConstraint">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="Layout.DialogItem">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Layout.Clickable">
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="Layout.EmptyStateItem">
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">28dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginStart" tools:targetApi="JELLY_BEAN_MR1">16dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="Layout.ListItem">
+        <item name="android:layout_height">72dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="Layout.Recycler">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layoutManager">android.support.v7.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="Layout.Recycler.Nested">
+        <item name="layoutManager">io.stepuplabs.settleup.ui.common.NestedLinearLayoutManager</item>
+    </style>
+
+    <style name="Layout.Recycler.Horizontal">
+        <item name="android:orientation">horizontal</item>
+        <item name="layoutManager">io.stepuplabs.settleup.ui.common.HorizontalLinearLayoutManager
+        </item>
+    </style>
+
+    <style name="Layout.Recycler.NotAnimated">
+        <item name="layoutManager">
+            io.stepuplabs.settleup.ui.history.NotAnimatedNestedLayoutManager
+        </item>
+    </style>
+
+    <style name="Layout.TextInput">
+        <item name="android:layout_marginLeft">28dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginRight">28dp</item>
+        <item name="hintTextAppearance">@style/InputFieldHintSmall</item>
+        <item name="hintAnimationEnabled">true</item>
+    </style>
+
+    <style name="Layout.Row">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="Layout.Calculator">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="Layout.CalculatorBox">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_5</item>
+    </style>
+
+    <style name="Layout.MemberCards">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Layout.Guideline">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Layout.AboutScreen">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="Separator">
+        <item name="android:background">@color/gray_2</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="Toolbar.SearchView" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+    <style name="Toolbar.AutoCompleteTextView" parent="Widget.AppCompat.AutoCompleteTextView">
+
+    </style>
+
+    <style name="Toolbar.Arrow" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <style name="Image.Avatar">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:minWidth">@dimen/meIndicatorIdentifier</item>
+    </style>
+
+    <style name="Image.AvatarMember" parent="Image.Avatar">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">15dp</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="Checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- This solves issue when tapping on edittext cause crash on API 26 https://stackoverflow.com/questions/45898228/android-attempt-to-invoke-virtual-method-void-android-view-view-getboundsonsc -->
+        <item name="android:importantForAutofill" tools:targetApi="o">noExcludeDescendants</item>
+    </style>
+
+    <style name="EditText.WhiteUnderline">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CheckedTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="Layout.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ripple_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AppBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.NameEllipsized">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <style name="TextView.CardTitle">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="TextView.GeneralText">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="TextView.CalculatorNumber">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="TextView.Circle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="TextView.DrawerTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextView.DrawerSubtitle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextView.Title">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextView.CardButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="TextView.MemberAmountText">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+
+    <style name="TextView.MemberAmount">
+        <item name="android:layout_marginRight">32dp</item>
+    </style>
+
+    <style name="TextView.AboutScreenItem">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+
+    <style name="TextView.SummaryCardFooter">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="TextView.CardFullWidthButton">
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart" tools:targetApi="JELLY_BEAN_MR1">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/ripple_background</item>
+    </style>
+
+    <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_width">76dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ConstraintGroup">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="FocusCatcher">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="ThreeDots">
+
+        <item name="android:tint">@color/gray_3</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:scaleType">fitCenter</item>
+
+    </style>
+
+    <style name="FloatingActionMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">10dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">18dp</item>
+        <item name="menu_animationDelayPerItem">0</item>
+        <item name="menu_backgroundColor">@color/black_70opacity</item>
+        <item name="menu_buttonSpacing">8dp</item>
+        <item name="menu_labels_cornerRadius">20dp</item>
+        <item name="menu_labels_ellipsize">none</item>
+        <item name="menu_labels_margin">6dp</item>
+        <item name="menu_labels_paddingBottom">8dp</item>
+        <item name="menu_labels_paddingLeft">12dp</item>
+        <item name="menu_labels_paddingRight">16dp</item>
+        <item name="menu_labels_paddingTop">8dp</item>
+        <item name="menu_labels_position">left</item>
+        <item name="menu_labels_showShadow">false</item>
+        <item name="menu_labels_textColor">@color/white</item>
+        <item name="menu_labels_textSize">14sp</item>
+    </style>
+
+    <style name="FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+    </style>
+
+    <style name="SearchView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+        <item name="android:textColorHint">@color/white_40opacity</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Button.Finish">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="BulletText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">11dp</item>
+    </style>
+
+    <style name="Layout.AboutItem">
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="Layout.WidgetRow">
+        <item name="android:background">@drawable/ripple_background</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Separator.Widget">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TextView.WidgetTriangle">
+        <item name="android:text">▼</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.WidgetCalcButton">
+        <item name="android:textAppearance">@style/WidgetCalcButton</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextView.WidgetCalcButton.Top">
+        <item name="android:paddingTop">16dp</item>
+    </style>
+
+    <style name="TextView.WidgetCalcButton.Bottom">
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="TextView.EditGroupButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/ripple_background</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/BtnPrimaryGroup</item>
+    </style>
+</resources>
