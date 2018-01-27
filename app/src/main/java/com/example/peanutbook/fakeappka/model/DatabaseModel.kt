@@ -5,8 +5,11 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.google.firebase.database.Exclude
 
 /**
- * Created by PeanutBook on 19.01.2018.
+ * Base class for all database models
+ *
+ * @author Josef Hruška (josef@stepuplabs.io)
  */
+
 abstract class DatabaseModel {
 
     @Exclude
@@ -31,16 +34,4 @@ abstract class DatabaseModel {
     }
 
     override fun hashCode() = getId().hashCode()
-
-    @Suppress("UNCHECKED_CAST")
-    fun toMap() =
-            ObjectMapper().convertValue(this, Map::class.java) as Map<String, Any>
-
-    @Exclude
-    @JsonIgnore
-    open fun requiredProperties(): List<String> = emptyList()
-
-    @Exclude
-    @JsonIgnore
-    open fun hasRequiredProperties() = true
 }

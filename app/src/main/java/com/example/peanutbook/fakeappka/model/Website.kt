@@ -1,11 +1,14 @@
 package com.example.peanutbook.fakeappka.model
 
-import com.example.peanutbook.fakeappka.UNDEFINED
+import com.example.peanutbook.fakeappka.extensions.UNDEFINED
 import net.alhazmy13.wordcloud.WordCloud
 
 /**
- * Created by PeanutBook on 19.01.2018.
+ * Model representing single website
+ *
+ * @author Josef Hruška (josef@stepuplabs.io)
  */
+
 
 class Website : DatabaseModel() {
 
@@ -15,7 +18,6 @@ class Website : DatabaseModel() {
 
     var topic: ArrayList<String> = arrayListOf()
 
-    var network: HashMap<String, Network> = hashMapOf()
     var following: HashMap<String, Double> = hashMapOf()
     var followers: HashMap<String, Double> = hashMapOf()
 

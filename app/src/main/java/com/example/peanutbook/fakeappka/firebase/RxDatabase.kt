@@ -10,7 +10,7 @@ import rx.android.schedulers.AndroidSchedulers
 /**
  * Utilities related to RX and Database.
  *
- * @author David Vávra (david@stepuplabs.io)
+ * @author Josef Hruška (josef@stepuplabs.io)
  */
 
 fun DatabaseQuery.observe(): Observable<DataSnapshot?> {

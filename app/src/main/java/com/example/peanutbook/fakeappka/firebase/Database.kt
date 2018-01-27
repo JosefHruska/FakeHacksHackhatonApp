@@ -6,7 +6,7 @@ import java.math.BigDecimal
 /**
  * Main access point to Firebase Real-time Database. Handles initialization.
  *
- * @author David Vávra (david@stepuplabs.io)
+ * @author Josef Hruška (josef@stepuplabs.io)
  */
 object Database {
 

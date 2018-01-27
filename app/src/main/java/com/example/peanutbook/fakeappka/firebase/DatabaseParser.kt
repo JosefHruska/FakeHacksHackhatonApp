@@ -3,8 +3,12 @@ package com.example.peanutbook.fakeappka.firebase
 import com.example.peanutbook.fakeappka.model.DatabaseModel
 import com.google.firebase.database.DataSnapshot
 import rx.Observable
-import java.math.BigDecimal
 
+/**
+ * Utils for transforming DataSnaphots from database to different observable types
+ *
+ * @author Josef Hruška (josef@stepuplabs.io)
+ */
 
 fun <T : DatabaseModel> Observable<DataSnapshot?>.toObjectObservable(type: Class<T>): Observable<T?> {
     return this.map {
@@ -51,4 +55,3 @@ fun <T> Observable<DataSnapshot?>.toPrimitiveObservable(type: Class<T>): Observa
         it.getValue(type)
     }
 }
-

@@ -2,12 +2,12 @@ package com.example.peanutbook.fakeappka.firebase
 
 import com.google.firebase.database.Query
 
-
 /**
  * Query for a list path in Firebase Database.
  *
- * @author David Vávra (david@stepuplabs.io)
+ * @author Josef Hruška (josef@stepuplabs.io)
  */
+
 class DatabaseQuery {
 
     lateinit var path: String
