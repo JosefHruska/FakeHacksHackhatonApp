@@ -15,8 +15,6 @@
         <item name="android:windowBackground">@color/gray_1</item>
         <item name="searchViewStyle">@style/Toolbar.SearchView</item>
         <item name="autoCompleteTextViewStyle">@style/Toolbar.AutoCompleteTextView</item>
-        <item name="droppyMenuItemTitleStyle">@style/DroppyMenuItemTitle</item>
-        <item name="droppyMenuItemStyle">@style/DroppyMenuItem</item>
     </style>
 
     <style name="AppTheme.WhiteBackground">
@@ -42,17 +40,6 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="DroppyMenuItemTitle">
-        <item name="android:textAppearance">@style/Overflow</item>
-    </style>
-
-    <style name="DroppyMenuItem" parent="Droppy.DroppyMenuItem">
-        <item name="android:paddingLeft">24dp</item>
-        <item name="android:paddingRight">24dp</item>
-        <item name="android:paddingTop">8dp</item>
-        <item name="android:paddingBottom">8dp</item>
-    </style>
 
     <style name="LoginTheme" parent="FirebaseUI">
         <item name="colorPrimary">@color/primary</item>

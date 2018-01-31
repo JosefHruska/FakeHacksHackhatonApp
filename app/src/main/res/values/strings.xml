@@ -2,8 +2,20 @@
     <string name="app_name">Source Check</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Main activity -->
     <string name="no">No.</string>
     <string name="site">Site</string>
     <string name="fakenews">Fakenews</string>
+    <string name="about">About</string>
+    <string name="share_url_from_browser">Share URL from browser to this app to see info.</string>
+    <string name="website_not_analyzed">This site is not analyzed yet.</string>
+    <string name="credits_thanks"><u>Credits &amp; Thanks</u></string>
+
+    <!-- About activity -->
+    <string name="credits">Credits</string>
+    <string name="thanks"><b>Thanks to our mentors:</b>\nPetr Hamerník\nJosef Šlerka\nRoman Máca\n...</string>
+    <string name="data_sources"><b>Data sources:</b>\nDataweps.com\nGeneea.com\nNetmonitor.cz\nkonspiratori.sk\nspyonweb.com</string>
+    <string name="techstack"><b>Techstack:</b>\nAndroid: Kotlin &amp; Firebase\nAnalytics: R &amp; Python\n Scraping: Python\ Content matching:\nLocality-Sensitive Hashing</string>
+    <string name="team"><b>Our lovely team ♡ :</b>\n\n<b>Analytics:</b>\nJosef Moudřík &amp; Magda Čejková\n\n<b>Android &amp; Firebase:</b>\nJosef Hruška\n\n<b>Design &amp; Presentation &amp; Research:</b>\nJanne Klešči</string>
 
 </resources>

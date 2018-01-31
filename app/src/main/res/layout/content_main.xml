@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    style="@style/Layout.Scroll">
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.example.peanutbook.fakeappka.MainActivity"
+        tools:context="com.example.peanutbook.fakeappka.ui.MainActivity"
         tools:showIn="@layout/activity_main">
 
         <android.support.v7.widget.CardView
@@ -40,7 +38,6 @@
                     style="@style/TextView.GeneralText"
                     android:layout_gravity="center"
                     android:textStyle="bold"
-
                     android:textAppearance="@style/GeneralText"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/vWebsiteTitle" />
@@ -153,7 +150,7 @@
                 <TextView
                     android:id="@+id/vTopic"
                     style="@style/TextView.GeneralText"
-                    android:textColor="@color/blue_light"
+                    android:textColor="@color/green_light"
                     android:textSize="18sp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -199,7 +196,7 @@
                     style="@style/TextView.GeneralText"
                     android:layout_marginLeft="0dp"
                     android:layout_marginTop="8dp"
-                    android:textColor="@color/blue_light"
+                    android:textColor="@color/green_light"
                     android:textSize="18sp"
                     app:layout_constraintLeft_toLeftOf="@id/vMainTopicTitle"
                     app:layout_constraintTop_toBottomOf="@id/vMainTopicTitle" />
@@ -322,7 +319,7 @@
                         android:orientation="horizontal"
                         app:rcBackgroundColor="@color/gray_1"
                         app:rcBackgroundPadding="4dp"
-                        app:rcProgressColor="@color/blue_light"
+                        app:rcProgressColor="@color/green_light"
                         app:rcSecondaryProgressColor="@color/gray_1" />
                 </LinearLayout>
 
@@ -345,12 +342,11 @@
                         android:orientation="horizontal"
                         app:rcBackgroundColor="@color/gray_1"
                         app:rcBackgroundPadding="4dp"
-                        app:rcProgressColor="@color/blue_light"
+                        app:rcProgressColor="@color/green_light"
                         app:rcSecondaryProgressColor="@color/gray_1" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:id="@+id/vRelatedSitesCard"

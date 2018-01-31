@@ -2,8 +2,8 @@
 <resources>
     <!-- Named colors from Zeplin: -->
     <color name="accent">#f2774a</color>
-    <color name="blue_light">#64B5F6</color>
-    <color name="blue_dark">#2196F3</color>
+    <color name="green_light">#0cc198</color>
+    <color name="blue_dark">#0cc198</color>
     <color name="gray_1">#e4e4e4</color>
     <color name="gray_2">#d8d8d8</color>
     <color name="gray_3">#bbbbbb</color>

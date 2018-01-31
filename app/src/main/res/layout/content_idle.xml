@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Full"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        style="@style/TextView.Centered"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:text="@string/share_url_from_browser" />
+
+    <TextView
+        android:id="@+id/vCredits"
+        style="@style/TextView.Centered"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:text="@string/credits_thanks" />
+
+</LinearLayout>

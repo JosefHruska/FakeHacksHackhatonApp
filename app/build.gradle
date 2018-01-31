@@ -67,7 +67,7 @@ dependencies {
     implementation "com.android.support:design:$support_version"
     implementation "com.android.support:cardview-v7:$support_version"
     implementation "com.android.support:recyclerview-v7:$support_version"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta3'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta4'
     // firebase
     implementation "com.google.firebase:firebase-core:$firebase_version"
     implementation "com.google.firebase:firebase-auth:$firebase_version"
@@ -82,11 +82,15 @@ dependencies {
     implementation "com.google.android.gms:play-services-nearby:$firebase_version"
     implementation "com.google.android.gms:play-services-auth:$firebase_version"
     implementation "com.google.android.gms:play-services-ads:$firebase_version"
-    // Rx
-    implementation 'io.reactivex:rxandroid:1.2.1'
-    implementation "io.reactivex:rxjava:1.3.3"
-    implementation "com.artemzin.rxjava:proguard-rules:1.3.3.0"
-    implementation 'io.reactivex:rxkotlin:1.0.0'
+    // RxJava
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'io.reactivex.rxjava2:rxkotlin:2.1.0'
+    // Architectural components
+    compile 'android.arch.lifecycle:runtime:1.+'
+    compile 'android.arch.lifecycle:extensions:1.+'
+    // Optional Rx Wrapper
+    compile 'com.gojuno.koptional:koptional:1.1.0'
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "org.jetbrains.anko:anko-sdk15:0.10.2"
@@ -94,29 +98,14 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.7'
     // Our libraries
     implementation "io.stepuplabs.firebaseui.android:firebase-ui-auth:2.0.1.5"
-    implementation 'io.stepuplabs.droppy:droppy:0.6.1.0'
-    implementation 'com.github.step-up-labs:ViewPagerAnimator:v1.0.2'
     // Other third party libs
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
-    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
-    implementation 'me.grantland:autofittextview:0.2.1'
-    implementation 'com.udojava:EvalEx:1.16'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
-    implementation 'com.wdullaer:materialdatetimepicker:3.4.0'
-    implementation 'com.github.clans:fab:1.6.4'
-    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.2'
-    implementation 'tyrantgit:explosionfield:1.0.1'
-    implementation 'eu.inloop:pageradapter:0.1.0'
-    implementation ('org.solovyev.android:checkout:1.2.1') {
-        exclude group: "com.google.code.findbugs"
-    }
     implementation 'com.facebook.android:facebook-android-sdk:4.22.1' // We should not update this until firebase-ui-auth is updated
-    implementation 'net.sf.supercsv:super-csv:2.4.0'
-    implementation 'com.mikepenz:aboutlibraries:6.0.0'
-    implementation 'com.robinhood.ticker:ticker:1.2.2'
     implementation 'net.alhazmy13.wordcloud:library:0.2.0-beta'
     implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 
     // Test dependencies
     testImplementation 'junit:junit:4.12'

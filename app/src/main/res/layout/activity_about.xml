@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Layout.Coordinator">
+
+    <android.support.design.widget.AppBarLayout style="@style/AppBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/vToolbar"
+            style="@style/Layout.Toolbar"
+            android:theme="@style/Layout.Toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/credits" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_marginTop="64dp"
+        style="@style/Layout.Full">
+
+        <TextView
+            style="@style/TextView.Centered"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="@string/thanks" />
+
+        <TextView
+            style="@style/TextView.Centered"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="@string/data_sources" />
+
+        <TextView
+            style="@style/TextView.Centered"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="@string/techstack" />
+
+        <TextView
+            style="@style/TextView.Centered"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="@string/team" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

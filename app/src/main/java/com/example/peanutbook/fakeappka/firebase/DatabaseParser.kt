@@ -1,8 +1,11 @@
 package com.example.peanutbook.fakeappka.firebase
 
 import com.example.peanutbook.fakeappka.model.DatabaseModel
+import com.gojuno.koptional.None
+import com.gojuno.koptional.Optional
+import com.gojuno.koptional.toOptional
 import com.google.firebase.database.DataSnapshot
-import rx.Observable
+import io.reactivex.Flowable
 
 /**
  * Utils for transforming DataSnaphots from database to different observable types
@@ -10,48 +13,39 @@ import rx.Observable
  * @author Josef Hruška (josef@stepuplabs.io)
  */
 
-fun <T : DatabaseModel> Observable<DataSnapshot?>.toObjectObservable(type: Class<T>): Observable<T?> {
+fun <T : DatabaseModel> Flowable<Optional<DataSnapshot>>.toObjectObservable(type: Class<T>): Flowable<Optional<T>> {
     return this.map {
-        if (it == null) {
-            return@map null
+        if (it == None) {
+            val nothing: Optional<T> = None
+            return@map nothing
         }
-        val data = it.getValue(type)
-        data?.setId(it.key)
-        if (data?.hasRequiredProperties() == true) {
-            return@map data
-        } else {
-            return@map null
-        }
+        val snapshot = it.toNullable()
+        val data = snapshot?.getValue(type)
+        data?.setId(snapshot.key)
+        data.toOptional()
     }
 }
 
-fun <T : DatabaseModel> Observable<DataSnapshot?>.toListObservable(type: Class<T>): Observable<List<T>?> {
+fun <T : DatabaseModel> Flowable<Optional<DataSnapshot>>.toListObservable(type: Class<T>): Flowable<Optional<List<T>>> {
     return this.map {
-        if (it == null) {
-            return@map null
-        }
-        it.children.map {
-            val data = checkNotNull(it.getValue(type), { "Non-existing db path" })
+        val noneList: Optional<List<T>> = None
+        val list = it.toNullable() ?: return@map noneList
+        list.children.map {
+            val data = checkNotNull(it.getValue(type), {"Non-existing db path"})
             data.setId(it.key)
             data
-        }.filter { it.hasRequiredProperties() }
+        }.toOptional()
     }
 }
 
-fun Observable<DataSnapshot?>.toCountObservable(): Observable<Int?> {
-    return this.map {
-        if (it == null) {
-            return@map 0
-        }
-        it.childrenCount.toInt()
-    }
-}
 
-fun <T> Observable<DataSnapshot?>.toPrimitiveObservable(type: Class<T>): Observable<T?> {
+fun <T : Any> Flowable<Optional<DataSnapshot>>.toPrimitiveObservable(type: Class<T>): Flowable<Optional<T>> {
     return this.map {
-        if (it == null) {
-            return@map null
+        if (it is None) {
+            val nothing: Optional<T> = None
+            return@map nothing
         }
-        it.getValue(type)
+        val primitive = it.toNullable()?.getValue(type)
+        primitive.toOptional()
     }
 }

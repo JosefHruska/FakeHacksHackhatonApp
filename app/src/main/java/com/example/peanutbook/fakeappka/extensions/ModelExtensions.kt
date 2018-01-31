@@ -1,5 +1,7 @@
 package com.example.peanutbook.fakeappka.extensions
 
+import com.example.peanutbook.fakeappka.model.Website
+
 /**
  * Model extensions
  *
@@ -11,3 +13,5 @@ const val UNKNOWN = "UNKNOWN"
 
 // value of fields which are required for models. If model contains this value, it's treated as null
 const val UNDEFINED = "UnDeF"
+
+fun List<Website>.findByName(url: String?) = this.find { it.getId().substringBefore("_").replace("-", ".") == url }

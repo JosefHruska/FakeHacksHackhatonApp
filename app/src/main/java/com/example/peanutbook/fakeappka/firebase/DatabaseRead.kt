@@ -1,7 +1,8 @@
 package com.example.peanutbook.fakeappka.firebase
 
 import com.example.peanutbook.fakeappka.model.Website
-import rx.Observable
+import com.gojuno.koptional.Optional
+import io.reactivex.Flowable
 
 /**
  * Methods for simple reading in Firebase Database.
@@ -11,7 +12,7 @@ import rx.Observable
 
 object DatabaseRead {
 
-    fun websites(): Observable<List<Website>?> {
+    fun websites(): Flowable<Optional<List<Website>>> {
         return DatabaseQuery().apply { path = "websites/"; orderByChild = "order" }
                 .observe()
                 .toListObservable(Website::class.java)

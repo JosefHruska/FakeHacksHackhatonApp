@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.peanutbook.fakeappka.MainActivity">
+    tools:context="com.example.peanutbook.fakeappka.ui.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -12,34 +12,36 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/vToolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+            app:title="@string/app_name"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-
-
-    <include layout="@layout/content_main"
+    <include
+        android:id="@+id/vContentMain"
+        layout="@layout/content_main"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="64dp"
         android:paddingBottom="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:visibility="gone"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:visibility="gone"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <include
+        android:id="@+id/vContentIdle"
+        layout="@layout/content_idle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"/>
 
     <ProgressBar
         android:id="@+id/vProgress"
         style="@style/ProgressBar"
+        android:visibility="gone"
         android:layout_gravity="center" />
 
 </android.support.design.widget.CoordinatorLayout>
