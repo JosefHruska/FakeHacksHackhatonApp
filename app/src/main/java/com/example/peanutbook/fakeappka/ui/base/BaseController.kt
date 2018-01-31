@@ -1,7 +1,11 @@
 package com.example.peanutbook.fakeappka.ui.base
 
 /**
- * // TODO: Add description
+ * Base controller interface
  *
  * @author Josef Hruška (josef@stepuplabs.io)
  */
+
+interface BaseController : Controller {
+
+}

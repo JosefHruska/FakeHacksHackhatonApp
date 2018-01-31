@@ -1,7 +1,11 @@
 package com.example.peanutbook.fakeappka.ui.about
 
+import com.example.peanutbook.fakeappka.ui.base.BaseController
+
 /**
- * // TODO: Add description
+ * Controller for [AboutActivity]
  *
  * @author Josef Hruška (josef@stepuplabs.io)
  */
+
+interface AboutController: BaseController {}
